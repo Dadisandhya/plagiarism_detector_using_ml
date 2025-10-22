@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Plagiarism Detector</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
@@ -10,6 +9,7 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #1f2c34, #3a506b);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -76,6 +76,18 @@
             transform: translateY(-2px) scale(1.02);
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
+
+        footer {
+            margin-top: 20px;
+            color: #e0f7fa;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        footer i {
+            color: #ffb400;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -91,5 +103,9 @@
             <button type="submit"><i class="fas fa-check"></i> Check Plagiarism</button>
         </form>
     </div>
+
+    <footer>
+        <i class="fas fa-code"></i> Developed by <strong>Sandhya D</strong>
+    </footer>
 </body>
 </html>
