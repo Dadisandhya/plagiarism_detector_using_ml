@@ -2,6 +2,8 @@ from flask import Flask, render_template, request
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
+# app = Flask(__name__)
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
@@ -31,4 +33,5 @@ def detect(text1, text2):
 #   import os
 #  port = int(os.environ.get("PORT", 8000))  #port 8000
 # app.run(debug=True, host="0.0.0.0", port=port)
+
 
