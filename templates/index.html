@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Plagiarism Detector</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1f2c34, #3a506b);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: linear-gradient(135deg, #e0f7fa, #b2ebf2);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            width: 550px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #1f2c34;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        h2 i {
+            color: #007BFF;
+            margin-right: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #1f2c34;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+            resize: vertical;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        textarea:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+            transform: scale(1.02);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 15px;
+            background-color: #007BFF;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2><i class="fas fa-search"></i>Plagiarism Detector</h2>
+        <form action="/detect" method="POST">
+            <label for="text1">Text 1:</label>
+            <textarea name="text1" rows="5" placeholder="Enter first text here..."></textarea>
+
+            <label for="text2">Text 2:</label>
+            <textarea name="text2" rows="5" placeholder="Enter second text here..."></textarea>
+
+            <button type="submit"><i class="fas fa-check"></i> Check Plagiarism</button>
+        </form>
+    </div>
+</body>
+</html>
