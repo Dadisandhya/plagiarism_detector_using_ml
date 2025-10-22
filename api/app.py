@@ -29,8 +29,9 @@ def detect(text1, text2):
     similarity = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix[1:2])[0][0]
     return round(similarity * 100, 2)  
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     port = int(os.environ.get("PORT", 8000))
     app.run(debug=True, host="0.0.0.0", port=port)
+
 
 
